@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- create menu -->
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#login">login</a></li>
+      </ul>
+      <!--create a form -->
+        <div>
+          <form action="/action_page.php" target="_blank" method="GET">
+            UserName: <br>
+            <input  type="text" name="UserName"><br>
+            password : <br>
+            <input type="text" name="password"><br>
+            <input type="submit" value="submit">
+          </form>
+        </div>
+
+        <div>
+          <form oninput="x.value=parseInt(a.value)">
+            selected your age: 
+             0<input type="range" id="a" name="a" value="100" min="0" max="100">100
+              <button type="text"><output name="x" for="a"></output></button> 
+              <input type="submit" name="submit" value="submit">
+          </form>
+          <form>
+            Date of Birth
+            <input type="datetime-local" name="bday">
+            mm/dd/yyyy
+            <input type="submit" name="bday" value="submit">
+          </form>
+        </div>
+        <div>
+            <form>
+              select your favarite color : 
+              <input type="color" name="favcolor" value:green>
+              <input type="submit" name="submit" value="submit">
+            </form>
+        </div>
+        <div>
+          Select your gender :
+          <form>
+            <input type="radio" name="gender" value="Male" checked="">Male<br>
+            <input type="radio" name="gender" value="Female">Female<br>
+            <input type="radio" name="grnder" value="Others">Others<br>
+            <input type="submit" value="submit">
+          </form>
+        </div>
+        <form>
+                Selected your Brower:
+            <select name="browers" size="1">
+              <option value="opera">opera</option>
+              <option value="mozilla">mozilla</option>
+              <option value="crome">crome</option>
+              <option value="firemax">firemax</option>
+            </select>
+            <input type="submit" value="submit">
+        </form>
+
+
+          <div style="padding=5px; margin=10px">
+            <form>
+              Selected your cars: 
+              <select name="Cars" size="1">
+                  <option value="volvo">Volvo</option>
+                  <option value="audi">Audi</option>
+                  <option value="corola">corola</option>
+                  <option value="toyota">toyota</option>
+                </select>
+                <input type="submit" value="submit">
+            </form>
+          </div>
+            <p>Write your comment:</p>
+            <textarea name="comment" rows="10" cols="30">
+              start here...
+             </textarea>
+            <input type="submit" value="comment"><br>
+            <button type="button" onclick="alert('JA VAG')">let's Fuck</button>
+
+  </body>
+</html>
